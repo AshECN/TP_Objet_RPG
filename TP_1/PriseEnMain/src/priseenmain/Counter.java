@@ -41,16 +41,20 @@ public class Counter {
     
     
     public int maMethodeIllisible(int a, int b) {
-        int res=0;
-        if((a > 2)||(b<8)){for(int i=0;i<a+b*4;i++){res +=i+2*a;
-            if(res > 25){res-=2;}
-            }}
-            else{
-                res =4;
+        int res = 0;
+        if ((a > 2) || (b < 8)) {
+            for (int i = 0; i < a + b * 4; i++) {
+                res += i + 2 * a;
+                if (res > 25) {
+                    res -= 2;
+                }
             }
+        } else {
+            res = 4;
+        }
         return res;
     }
-    
+
     public int maMethodeLisible(int a, int b) {
         int res = 0;
         if ((a > 2) || (b < 8)) {
