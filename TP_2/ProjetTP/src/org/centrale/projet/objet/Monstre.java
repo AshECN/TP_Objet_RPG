@@ -5,6 +5,8 @@
  */
 package org.centrale.projet.objet;
 
+import java.util.Random;
+
 /**
  *
  * @author Hicham
@@ -90,7 +92,25 @@ public class Monstre {
     }
 
         // Autres
-    // add methode deplace
+    
+    public void deplace() {
+        // deplace de façon aléatoire un personnage sur la carte
+        // génère un nombre aléatoire entre 1 et 4, et selon le tirage, déplace le personnage
+        // 1 = N, 2 = E, 3 = S, 4 = O
+        Random generateurAleatoire = new Random();
+        int entierAlea = generateurAleatoire.nextInt(1);
+        if (entierAlea == 1){
+            this.pos.y = this.pos.y + 1;
+        }else if (entierAlea == 2){
+            this.pos.x = this.pos.x - 1;
+        }else if (entierAlea == 3){
+            this.pos.y = this.pos.y - 1;
+        }else{
+            this.pos.x = this.pos.x + 1;
+        }
+        
+    }
+    
     public void affiche() {
         System.out.println("Les coordonnées du monstre sont : [" + this.pos.x + ";" + this.pos.y + "]");
         System.out.println("Il a " + this.ptVie + " PV, " + this.pourcentageAtt + " PA, " + this.pourcentagePar + " PM, " + this.degAtt + "dA");
