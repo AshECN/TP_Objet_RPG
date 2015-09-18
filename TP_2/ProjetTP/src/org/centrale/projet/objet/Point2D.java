@@ -12,8 +12,8 @@ package org.centrale.projet.objet;
 public class Point2D {
 
     // Attributs
-     private int x;
-     private int y;
+     protected int x;
+     protected int y;
     
      // Constructeurs
     public Point2D() {

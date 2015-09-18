@@ -12,11 +12,11 @@ package org.centrale.projet.objet;
 public class Monstre {
 
     // Attributs
-    private int ptVie;
-    private int pourcentageAtt;
-    private int pourcentagePar;
-    private int degAtt;
-    private Point2D pos;
+    protected int ptVie;
+    protected int pourcentageAtt;
+    protected int pourcentagePar;
+    protected int degAtt;
+    protected Point2D pos;
 
     // Constructeurs
     public Monstre() {
