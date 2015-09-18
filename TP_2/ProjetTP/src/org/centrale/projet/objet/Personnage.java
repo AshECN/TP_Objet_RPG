@@ -13,16 +13,16 @@ package org.centrale.projet.objet;
 public class Personnage {
 
     // Attributs
-    private int ptVie;
-    private int ptMana;
-    private int pourcentageAtt;
-    private int pourcentagePar;
-    private int pourcentageMag;
-    private int pourcentageResistMag;
-    private int degAtt;
-    private int degMag;
-    private int distAttMax;
-    private Point2D pos;
+    protected int ptVie;
+    protected int ptMana;
+    protected int pourcentageAtt;
+    protected int pourcentagePar;
+    protected int pourcentageMag;
+    protected int pourcentageResistMag;
+    protected int degAtt;
+    protected int degMag;
+    protected int distAttMax;
+    protected Point2D pos;
 
     // Constructeurs
     public Personnage() {
